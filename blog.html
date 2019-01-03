@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<head>
+<link href="/normalize.css" rel="stylesheet">
+<style>
+header{
+  text-align:center;
+  background: url("background.jpg");
+  background-size:cover;
+  color:white;
+}
+a{
+  color:white;
+  }
+  h1{
+    font-size:70px;
+    font-style: oblique;
+    }
+    img{
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+       border-radius:20px;
+    }
+ul{
+  padding:15px;
+  background:brown;
+  text-align:right;
+  }
+  li{
+    display:inline;
+     padding: 0px 10px 0px 10px;
+
+  }
+  .writings{
+    text-align: inherit;
+    font-style: oblique;
+  }
+  .logos{
+    position: absolute;
+  left: 10px;
+  width: 200px;
+  height: 120px;
+  border: cover;
+  }
+  input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  }
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 300px;
+
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.last{
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="logos">
+      <img src="logo.png">
+
+    </div>
+
+
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+
+    <img src="background.jpg">
+    <h1>Everly's Bakery</h1>
+
+  </header>
+  <div class="writings">
+    <p><h3>Welcome to everly's Bakery</h3></p>
+    <p><h3>We specialize in the production of bread, pie and other confectionaries fro your satisfaction</h3></p>
+    <p><h3>We would like to see you</h3></p>
+    <p><h3>An irresistible treat for brunch or a special breakfast. The heady aroma of warm cinnamon and orange zest is a reward in itself. Then you get to eat them too!</h3></p>
+    <p><h3>Bolted sprouted sourdough bread, baked in an oblong cloche, may be the perfect loaf to bring to a dinner party or just to enjoy at home.</h3></p>
+    <p><h3>This ciabatta recipe uses sprouted red wheat flour to make it more nutritious and complex in flavor without compromising the wild open crumb that is characteristic of the style.</h3></p>
+    <div class="image">
+      <img src="download.jpg">
+      <img src="pie.jpg">
+      <img src="piee.jpg">
+
+    </div>
+
+
+  </div>
+
+  <div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="nigeria">Nigeria</option>
+      <option value="ghana">Ghana</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+</body>
+<footer>
+<div class="row">
+  <div class="column" style="background-color:brown;">
+    <h2>Cake</h2>
+    <p>Pie</p>
+    <p>Cake</p>
+    <p>Chocolate Cake</p>
+    <p>Chocolate Cake</p>
+
+  </div>
+  <div class="column" style="background-color:brown;">
+    <h2>Bread</h2>
+    <p>Bread</p>
+    <p>Slice bread</p>
+    <p>Agege bread</p>
+    <p>Slice bread</p>
+  </div>
+  <div class="column" style="background-color:brown;">
+    <h2>Food</h2>
+    <p>Donuts</p>
+    <p>Donuts</p>
+    <p>Donuts</p>
+  </div>
+  <div class="column" style="background-color:brown;">
+    <h2>Pie</h2>
+    <p>Meat pie</p>
+    <p>Meat pie</p>
+    <p>Meat pie</p>
+  </div>
+</div>
+
+
+</footer>
+<footer class="last">&copy; Copyright 2018 everly</footer>
